@@ -495,6 +495,12 @@ export interface HttpOptions extends HttpRangeOptions {
  */
 export interface HttpRangeOptions {
   /**
+   * A custom `fetch` function to use for making HTTP requests. Ignored if `useXHR` is set to `true`.
+   *
+   * @defaultValue globalThis.fetch
+   */
+  customFetch?: typeof globalThis.fetch;
+  /**
    * `true` to rely `XMLHttpRequest` instead of `fetch` to fetch data.
    *
    * @defaultValue false

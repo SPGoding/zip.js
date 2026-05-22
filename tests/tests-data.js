@@ -38,6 +38,7 @@ export default ([
 	{ title: "Filesystem unzip uncompressed file", script: "./test-fs-unzip-store.js" },
 	{ title: "Filesystem test", script: "./test-fs.js" },
 	{ title: "HTTP crypto", script: "./test-http-crypto.js" },
+	{ title: "HTTP custom fetch", script: "./test-http-custom-fetch.js" },
 	{ title: "HTTP range (ZipWriter#add)", script: "./test-http-range-writer-add.js", env: ["browser"] },
 	{ title: "HTTP range", script: "./test-http-range.js", env: ["browser"] },
 	{ title: "HTTP split file", script: "./test-http-split-zip.js" },
