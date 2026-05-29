@@ -6,7 +6,7 @@
 
 # Interface: ZipReaderConstructorOptions
 
-Defined in: [index.d.ts:792](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L792)
+Defined in: [index.d.ts:798](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L798)
 
 Represents the options passed to the constructor of [ZipReader](../classes/ZipReader.md), and `{@link ZipDirectory}#import*`.
 
@@ -24,7 +24,7 @@ Represents the options passed to the constructor of [ZipReader](../classes/ZipRe
 
 > `optional` **checkOverlappingEntry?**: `boolean`
 
-Defined in: [index.d.ts:862](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L862)
+Defined in: [index.d.ts:868](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L868)
 
 `true` to throw an [ERR\_OVERLAPPING\_ENTRY](../variables/ERR_OVERLAPPING_ENTRY.md) error when calling [FileEntry#getData](FileEntry.md#getdata) if the entry
  overlaps with another entry on which [FileEntry#getData](FileEntry.md#getdata) has already been called (with the option
@@ -46,7 +46,7 @@ false
 
 > `optional` **checkOverlappingEntryOnly?**: `boolean`
 
-Defined in: [index.d.ts:871](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L871)
+Defined in: [index.d.ts:877](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L877)
 
 `true` to throw an [ERR\_OVERLAPPING\_ENTRY](../variables/ERR_OVERLAPPING_ENTRY.md) error when calling [FileEntry#getData](FileEntry.md#getdata) if the entry
  overlaps with another entry on which [FileEntry#getData](FileEntry.md#getdata) has already been called (with the option
@@ -69,7 +69,7 @@ false
 
 > `optional` **checkPasswordOnly?**: `boolean`
 
-Defined in: [index.d.ts:848](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L848)
+Defined in: [index.d.ts:854](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L854)
 
 `true` to check only if the password is valid.
 
@@ -89,7 +89,7 @@ false
 
 > `optional` **checkSignature?**: `boolean`
 
-Defined in: [index.d.ts:854](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L854)
+Defined in: [index.d.ts:860](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L860)
 
 `true` to check the signature of the entry.
 
@@ -109,7 +109,7 @@ false
 
 > `optional` **commentEncoding?**: `string`
 
-Defined in: [index.d.ts:828](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L828)
+Defined in: [index.d.ts:834](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L834)
 
 The encoding of the comment of the entry.
 
@@ -123,7 +123,7 @@ The encoding of the comment of the entry.
 
 > `optional` **extractAppendedData?**: `boolean`
 
-Defined in: [index.d.ts:807](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L807)
+Defined in: [index.d.ts:813](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L813)
 
 `true` to extract the appended data into [ZipReader#appendedData](../classes/ZipReader.md#appendeddata).
 
@@ -139,7 +139,7 @@ false
 
 > `optional` **extractPrependedData?**: `boolean`
 
-Defined in: [index.d.ts:801](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L801)
+Defined in: [index.d.ts:807](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L807)
 
 `true` to extract the prepended data into [ZipReader#prependedData](../classes/ZipReader.md#prependeddata).
 
@@ -155,7 +155,7 @@ false
 
 > `optional` **filenameEncoding?**: `string`
 
-Defined in: [index.d.ts:824](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L824)
+Defined in: [index.d.ts:830](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L830)
 
 The encoding of the filename of the entry.
 
@@ -169,7 +169,7 @@ The encoding of the filename of the entry.
 
 > `optional` **passThrough?**: `boolean`
 
-Defined in: [index.d.ts:879](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L879)
+Defined in: [index.d.ts:885](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L885)
 
 `true` to read the data as-is without decompressing it and without decrypting it.
 
@@ -183,7 +183,7 @@ Defined in: [index.d.ts:879](https://github.com/gildas-lormeau/zip.js/blob/54845
 
 > `optional` **password?**: `string`
 
-Defined in: [index.d.ts:875](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L875)
+Defined in: [index.d.ts:881](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L881)
 
 The password used to decrypt the content of the entry.
 
@@ -197,7 +197,7 @@ The password used to decrypt the content of the entry.
 
 > `optional` **preventClose?**: `boolean`
 
-Defined in: [index.d.ts:893](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L893)
+Defined in: [index.d.ts:899](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L899)
 
 `true` to prevent closing of [Writer#writable](../classes/Writer.md#writable) when calling [FileEntry#getData](FileEntry.md#getdata).
 
@@ -217,7 +217,7 @@ false
 
 > `optional` **rawPassword?**: `Uint8Array`\<`ArrayBufferLike`\>
 
-Defined in: [index.d.ts:883](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L883)
+Defined in: [index.d.ts:889](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L889)
 
 The password used to encrypt the content of the entry (raw).
 
@@ -231,7 +231,7 @@ The password used to encrypt the content of the entry (raw).
 
 > `optional` **signal?**: `AbortSignal`
 
-Defined in: [index.d.ts:887](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L887)
+Defined in: [index.d.ts:893](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L893)
 
 The `AbortSignal` instance used to cancel the decompression.
 
@@ -245,7 +245,7 @@ The `AbortSignal` instance used to cancel the decompression.
 
 > `optional` **transferStreams?**: `boolean`
 
-Defined in: [index.d.ts:301](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L301)
+Defined in: [index.d.ts:301](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L301)
 
 `true` to transfer stream ownership to web workers.
 
@@ -265,7 +265,7 @@ true
 
 > `optional` **useCompressionStream?**: `boolean`
 
-Defined in: [index.d.ts:295](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L295)
+Defined in: [index.d.ts:295](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L295)
 
 `true` to use the native API `CompressionStream`/`DecompressionStream` to compress/decompress data.
 
@@ -285,7 +285,7 @@ true
 
 > `optional` **useWebWorkers?**: `boolean`
 
-Defined in: [index.d.ts:289](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L289)
+Defined in: [index.d.ts:289](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L289)
 
 `true` to use web workers to compress/decompress data in non-blocking background processes.
 
@@ -305,7 +305,7 @@ true
 
 > `optional` **decodeText**(`value`, `encoding`): `string` \| `undefined`
 
-Defined in: [index.d.ts:836](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L836)
+Defined in: [index.d.ts:842](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L842)
 
 The function called for decoding the filename and the comment of the entry.
 

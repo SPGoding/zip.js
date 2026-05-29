@@ -6,7 +6,7 @@
 
 # Interface: HttpOptions
 
-Defined in: [index.d.ts:465](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L465)
+Defined in: [index.d.ts:465](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L465)
 
 Represents the options passed to the constructor of [HttpReader](../classes/HttpReader.md).
 
@@ -24,7 +24,7 @@ Represents the options passed to the constructor of [HttpReader](../classes/Http
 
 > `optional` **combineSizeEocd?**: `boolean`
 
-Defined in: [index.d.ts:490](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L490)
+Defined in: [index.d.ts:490](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L490)
 
 `true` to use `Range: bytes=-22` on the first request and cache the EOCD, make sure beforehand that the server supports a suffix range request.
 
@@ -36,11 +36,47 @@ false
 
 ***
 
+### customFetch?
+
+> `optional` **customFetch?**: (`input`, `init?`) => `Promise`\<`Response`\>
+
+Defined in: [index.d.ts:502](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L502)
+
+A custom `fetch` function to use for making HTTP requests. Ignored if `useXHR` is set to `true`.
+
+[MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/fetch)
+
+#### Parameters
+
+##### input
+
+`RequestInfo` \| `URL`
+
+##### init?
+
+`RequestInit`
+
+#### Returns
+
+`Promise`\<`Response`\>
+
+#### Default Value
+
+```ts
+globalThis.fetch
+```
+
+#### Inherited from
+
+[`HttpRangeOptions`](HttpRangeOptions.md).[`customFetch`](HttpRangeOptions.md#customfetch)
+
+***
+
 ### forceRangeRequests?
 
 > `optional` **forceRangeRequests?**: `boolean`
 
-Defined in: [index.d.ts:477](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L477)
+Defined in: [index.d.ts:477](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L477)
 
 `true` to always use `Range` headers when fetching data.
 
@@ -56,7 +92,7 @@ false
 
 > `optional` **headers?**: `Iterable`\<\[`string`, `string`\], `any`, `any`\> \| `Map`\<`string`, `string`\>
 
-Defined in: [index.d.ts:506](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L506)
+Defined in: [index.d.ts:512](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L512)
 
 The HTTP headers.
 
@@ -70,7 +106,7 @@ The HTTP headers.
 
 > `optional` **preventHeadRequest?**: `boolean`
 
-Defined in: [index.d.ts:484](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L484)
+Defined in: [index.d.ts:484](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L484)
 
 `true` to prevent using `HEAD` HTTP request in order the get the size of the content.
 `false` to explicitly use `HEAD`, this is useful in case of CORS where `Access-Control-Expose-Headers: Content-Range` is not returned by the server.
@@ -87,7 +123,7 @@ false
 
 > `optional` **useRangeHeader?**: `boolean`
 
-Defined in: [index.d.ts:471](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L471)
+Defined in: [index.d.ts:471](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L471)
 
 `true` to use `Range` headers when fetching data from servers returning `Accept-Ranges` headers.
 
@@ -103,7 +139,7 @@ false
 
 > `optional` **useXHR?**: `boolean`
 
-Defined in: [index.d.ts:502](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L502)
+Defined in: [index.d.ts:508](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L508)
 
 `true` to rely `XMLHttpRequest` instead of `fetch` to fetch data.
 

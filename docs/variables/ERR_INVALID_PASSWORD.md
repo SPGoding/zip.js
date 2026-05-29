@@ -8,6 +8,6 @@
 
 > `const` **ERR\_INVALID\_PASSWORD**: `string`
 
-Defined in: [index.d.ts:2295](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L2295)
+Defined in: [index.d.ts:2301](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L2301)
 
 Invalid password error

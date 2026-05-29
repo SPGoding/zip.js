@@ -8,6 +8,6 @@
 
 > `const` **ERR\_HTTP\_RANGE**: `string`
 
-Defined in: [index.d.ts:2247](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L2247)
+Defined in: [index.d.ts:2253](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L2253)
 
 HTTP range error

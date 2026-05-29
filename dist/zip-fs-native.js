@@ -2727,13 +2727,15 @@
 			preventHeadRequest,
 			useRangeHeader,
 			forceRangeRequests,
-			combineSizeEocd
+			combineSizeEocd,
+			customFetch
 		} = options;
 		options = Object.assign({}, options);
 		delete options.preventHeadRequest;
 		delete options.useRangeHeader;
 		delete options.forceRangeRequests;
 		delete options.combineSizeEocd;
+		delete options.customFetch;
 		delete options.useXHR;
 		Object.assign(httpReader, {
 			url,
@@ -2741,7 +2743,8 @@
 			preventHeadRequest,
 			useRangeHeader,
 			forceRangeRequests,
-			combineSizeEocd
+			combineSizeEocd,
+			customFetch
 		});
 	}
 
@@ -2862,8 +2865,9 @@
 		}
 	}
 
-	async function sendFetchRequest(method, { options, url }, headers) {
-		const response = await fetch(url, Object.assign({}, options, { method, headers }));
+	async function sendFetchRequest(method, { options, url, customFetch }, headers) {
+		const fetcher = customFetch || fetch;
+		const response = await fetcher(url, Object.assign({}, options, { method, headers }));
 		if (response.status < 400) {
 			return response;
 		} else {

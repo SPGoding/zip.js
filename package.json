@@ -1,9 +1,9 @@
 {
-  "name": "@zip.js/zip.js",
+  "name": "@spgoding/zip.js",
   "description": "A JavaScript library to zip and unzip files in the browser, Deno and Node.js",
   "author": "Gildas Lormeau",
   "license": "BSD-3-Clause",
-  "version": "2.8.26",
+  "version": "2.8.26-customfetch.1",
   "type": "module",
   "keywords": [
     "zip",
@@ -147,10 +147,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gildas-lormeau/zip.js.git"
+    "url": "git+https://github.com/SPGoding/zip.js.git"
   },
   "bugs": {
-    "url": "https://github.com/gildas-lormeau/zip.js/issues"
+    "url": "https://github.com/SPGoding/zip.js/issues"
   },
   "homepage": "https://gildas-lormeau.github.io/zip.js",
   "devDependencies": {

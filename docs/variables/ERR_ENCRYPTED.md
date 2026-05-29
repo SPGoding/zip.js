@@ -8,6 +8,6 @@
 
 > `const` **ERR\_ENCRYPTED**: `string`
 
-Defined in: [index.d.ts:2275](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L2275)
+Defined in: [index.d.ts:2281](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L2281)
 
 Encrypted entry error

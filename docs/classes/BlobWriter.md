@@ -6,7 +6,7 @@
 
 # Class: BlobWriter
 
-Defined in: [index.d.ts:590](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L590)
+Defined in: [index.d.ts:596](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L596)
 
 Represents a [WritableWriter](../interfaces/WritableWriter.md) instance used to retrieve the written data as a `Blob` instance.
 
@@ -21,7 +21,7 @@ Represents a [WritableWriter](../interfaces/WritableWriter.md) instance used to 
 
 > **new BlobWriter**(`mimeString?`): `BlobWriter`
 
-Defined in: [index.d.ts:604](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L604)
+Defined in: [index.d.ts:610](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L610)
 
 Creates the BlobWriter instance
 
@@ -43,7 +43,7 @@ The MIME type of the content.
 
 > **writable**: `WritableStream`
 
-Defined in: [index.d.ts:594](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L594)
+Defined in: [index.d.ts:600](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L600)
 
 The `WritableStream` instance.
 
@@ -57,7 +57,7 @@ The `WritableStream` instance.
 
 > **getData**(): `Promise`\<`Blob`\>
 
-Defined in: [index.d.ts:610](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L610)
+Defined in: [index.d.ts:616](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L616)
 
 Retrieves all the written data
 
@@ -73,7 +73,7 @@ A promise resolving to the written data.
 
 > **init**(): `Promise`\<`void`\>
 
-Defined in: [index.d.ts:598](https://github.com/gildas-lormeau/zip.js/blob/5484569bd1fe28423166efd99cd7ee7147ada8d8/index.d.ts#L598)
+Defined in: [index.d.ts:604](https://github.com/gildas-lormeau/zip.js/blob/060c9ba5b08648b8d2ac207905efc63733cd9263/index.d.ts#L604)
 
 Initializes the instance asynchronously
 
